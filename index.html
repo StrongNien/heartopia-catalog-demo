@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7ee">
+  <meta name="description" content="心動小鎮圖鑑小範本：搜尋、分類與收藏示範。">
+  <title>小鎮收藏冊｜心動小鎮圖鑑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="小鎮收藏冊首頁">
+        <span class="brand-mark" aria-hidden="true">✿</span>
+        <span>小鎮<span class="brand-light">收藏冊</span></span>
+      </a>
+      <nav class="top-nav" aria-label="主要導覽">
+        <a class="nav-link active" href="#catalog">圖鑑</a>
+        <a class="nav-link" href="#about">關於</a>
+      </nav>
+      <a class="top-cta" href="#catalog">開始探索 <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR LITTLE TOWN JOURNAL</span>
+          <h1 id="hero-title">把小鎮日常，<br><span>收藏起來。</span></h1>
+          <p>花、魚、昆蟲，還有那些偶然遇見的小驚喜。<br class="desktop-break">在這裡整理你的島上收藏。</p>
+          <a class="hero-button" href="#catalog">逛逛圖鑑 <span aria-hidden="true">↓</span></a>
+          <div class="hero-note"><span aria-hidden="true">☀</span> 慢慢探索，每一天都有新發現</div>
+        </div>
+        <div class="hero-art" aria-label="小鎮花園插畫">
+          <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+          <div class="hill hill-back"></div><div class="hill hill-front"></div>
+          <div class="flower flower-one">✿</div><div class="flower flower-two">✿</div><div class="flower flower-three">✿</div>
+          <div class="art-label"><span>小鎮手札</span><strong>NO. 001</strong></div>
+          <div class="art-caption">A LITTLE WORLD<br>TO CALL YOUR OWN</div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div><span class="eyebrow section-eyebrow">THE COLLECTION</span><h2 id="catalog-title">今日圖鑑 <span class="heading-sparkle">✳</span></h2></div>
+          <p>把遇見的美好，一件一件記下來。</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="category-list" role="group" aria-label="篩選圖鑑分類">
+            <button class="category-button active" data-category="全部" type="button">全部 <span>12</span></button>
+            <button class="category-button" data-category="花朵" type="button">花朵</button>
+            <button class="category-button" data-category="魚類" type="button">魚類</button>
+            <button class="category-button" data-category="昆蟲" type="button">昆蟲</button>
+            <button class="category-button" data-category="食材" type="button">食材</button>
+          </div>
+          <label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="visually-hidden">搜尋圖鑑</span><input id="search-input" type="search" placeholder="搜尋收藏..." autocomplete="off"><kbd>⌘ K</kbd></label>
+        </div>
+
+        <div class="result-line"><span id="result-count" aria-live="polite">顯示 12 件收藏</span><button id="favorites-toggle" class="favorites-toggle" type="button" aria-pressed="false"><span aria-hidden="true">♡</span> 只看我的收藏</button></div>
+        <div id="catalog-grid" class="catalog-grid" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">☁</span><h3>還沒有找到收藏</h3><p>試試其他關鍵字或切換分類吧。</p><button id="reset-filters" type="button">清除篩選</button></div>
+      </section>
+
+      <section class="quote-band" id="about"><span class="quote-icon" aria-hidden="true">❋</span><p>「在小鎮裡，連平凡的一天也值得好好收藏。」</p><span class="quote-credit">— 給每一位慢慢生活的人</span></section>
+    </main>
+
+    <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">✿</span><span>小鎮<span class="brand-light">收藏冊</span></span></a><span>非官方粉絲作品・資料為介面展示用範例</span><a href="#top">回到頂端 ↑</a></footer>
+  </div>
+  <dialog id="item-dialog" class="item-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="關閉">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+</body>
+</html>

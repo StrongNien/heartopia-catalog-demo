@@ -1,2 +1,23 @@
-# heartopia-catalog-demo
-A small catalog prototype for Heartopia / 心動小鎮
+# 小鎮收藏冊｜心動小鎮圖鑑範本
+
+一個使用原生 HTML、CSS、JavaScript 製作的繁體中文圖鑑小範本，無需安裝套件或建置工具。
+
+## 本機預覽
+
+在 VS Code / Codespaces 安裝並使用 **Live Server** 擴充功能，對 `index.html` 按右鍵選擇 **Open with Live Server**。也可以直接在瀏覽器開啟 `index.html`。
+
+## 範本功能
+
+- 依花朵、魚類、昆蟲、食材分類
+- 搜尋名稱、季節與出現地點（支援 `⌘ K` / `Ctrl K` 快速搜尋）
+- 加入收藏、只看收藏；收藏會儲存在瀏覽器
+- 點擊卡片查看範例詳細資料
+- 手機與桌面版響應式版面
+
+## 專案檔案
+
+- `index.html`：頁面結構
+- `styles.css`：視覺樣式與響應式排版
+- `app.js`：範例資料、搜尋篩選、收藏及詳細資料互動
+
+> 圖鑑內容和圖片表情符號皆為介面示範用虛構資料，並非遊戲官方資料。這是粉絲自製介面範本。
